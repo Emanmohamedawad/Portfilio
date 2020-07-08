@@ -1,0 +1,981 @@
+/*========================
+
+
+============
+=
+= 
+= 
+=======
+=
+=
+=
+============ 
+===========================BY EMAN MOHAMED=================*/
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none !important;
+  list-style: none;
+}
+
+body {
+  color: #333;
+  line-height: 1.3;
+  font-weight: 400;
+font-family: 'Cairo', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Tajawal', sans-serif;
+  overflow-x: hidden !important;
+}
+
+
+.main-color{
+    color:#C49B66
+}
+
+/*    ====================scrool====================                                      */
+.scroll {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    z-index:9999;
+}
+.scroll svg{
+    height:40px;
+    width:40px;
+    line-height:40px;
+    color:#fff;
+    border-radius:50%;
+    background-color: #b4004e;
+    font-size:20px;
+    padding:5px;
+    cursor: pointer;
+    transition: all .5s ease-in-out
+}
+.scroll svg:hover{
+    background-color:transparent;
+    color: #b4004e;
+    border:2px solid #b4004e
+}
+
+/*      ====================        Navbar       ================                                                 */
+.navbar{
+    position: absolute;
+    z-index:9999;
+    width:100%;
+    background-color: #000;
+}
+
+.navbar .logo {
+    width: 50%;
+    float: left;
+}
+.navbar .logo span{
+    color:#e91e63;
+    font-size: 30px;
+    font-weight: bold
+}
+
+.navbar .logo .logo-text{
+    font-size: 20px;
+    color:#fff;
+    font-family: 'Galada', cursive;
+    font-weight: bold
+}
+.navbar-light .navbar-nav .nav-link{
+    /* color:#eee; */
+    font-size: 20px;
+    color:#fff;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    margin-right:10px;
+    transition: all .3s ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+            color:#ec407a
+}
+.navbar-light .navbar-nav .nav-link:focus{
+    color:#ec407a;
+}
+.navbar-light .navbar-nav .active > .nav-link
+{
+        color:#ec407a
+}
+.navbar .bg-light{
+    background-color:transparent!important;
+}
+.navbar .navbar-brand img{
+    max-height:50px;
+    padding: 0;
+    margin-left:50px;
+    max-width:200px;
+}
+.nav-scroll{
+  background: #000;
+  border-bottom: 1px solid rgba(12, 12, 12, 0.04);
+  padding: 0;
+  position: fixed;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+.activated{
+    color:#ec407a
+}
+
+/*         ===================           header       ===============                 */
+
+.header{
+    width:100%;
+    background-image:url(../img/head.png);
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+.header .overlay{
+    /* background-color:rgba(99, 99, 99, 0.9); */
+     height:100%;
+    width: 100%;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+}
+
+.header .header-info{
+    color:#eee;
+    padding-top:20%;
+    padding-left:70px;
+    text-align: center;
+    font-family: 'Galada', cursive;
+}
+.header .header-info h3{
+    font-weight:bold;
+    font-size:45px;
+    font-family: 'Galada', cursive;
+    color:#ec407a
+}
+.header .header-info h1{
+    font-size:40px;
+    font-weight:400;
+    font-family: 'Galada', cursive;
+    padding-top:10px;
+}
+.header .writter{
+    display: inline-block;
+    padding-top: 10px;
+    font-size:35px;
+}
+.header .writter span
+{
+    color:#ec407a;
+    font-family: 'Galada', cursive;
+}
+@media (max-width:991px)
+{
+    .header .header-info{
+        text-align: left;
+        margin-left:-40px;
+    }
+        .header .header-img{
+       display: none
+    }
+    .navbar .navbar-nav{
+        background-color:#111;
+    }
+    .navbar{
+        padding:0;
+    }
+    .navbar-light .navbar-nav .nav-link{
+        padding-left:20px;
+    }
+}
+.header .header-info button{
+    padding:5px 30px;
+    border:1px solid #fff;
+    border-radius:20px;
+    background-color: #d81b60;
+    color:#fff;
+   
+    font-size:22px;
+    transition:all .5s ease-in-out
+}
+.header .header-info button i {
+    padding-left:20px;
+    font-size:20px;
+}
+.header .header-info button:hover
+{
+    background-color: transparent;
+    color:#fff;
+    border:1px solid #d81b60;
+}
+/*
+    ===============================
+            Work Styles
+    ===============================
+*/
+.work {
+    height: auto;
+    padding: 50px 0;
+    overflow: hidden;
+    background: #000
+    
+}
+
+.work .work-title {
+    font-size: 60px;
+    color:#fff;
+    text-align: center;
+    font-family: 'Galada', cursive;
+}
+
+.work .work-title span {
+    font-weight: normal
+}
+
+.work .part {
+    margin-top: 20px;
+    width: 30%;
+    float: left;
+    height: auto;
+    padding: 100px 0;
+    border: 1px solid #fff;
+    border-radius:20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 5%;
+
+}
+
+.work .first {
+    margin-left: 0
+}
+
+.work .part .icon {
+    color: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    box-shadow: 0 0 30px #2196f3,0 0 40px #2196f3, 0 0 100px #2196f3;
+}
+
+.work .part .part-title {
+    font-size: 25px;
+    color: #e91e63;
+    font-family: 'Libre Baskerville', serif;
+    margin-bottom: 20px
+}
+
+.work .part .line {
+    width: 60%;
+    margin: auto;
+    color:#fff;
+    margin-bottom: 20px
+}
+
+.work .part .part-desc {
+    font-size: 20px;
+    color: #eee;
+    padding: 20px
+}
+
+@media (max-width: 575px) {
+    .work .part {
+        width: 100%;
+        float: none;
+        margin-left: 0
+        
+    }
+}
+
+@media (min-width: 576px )and (max-width:768px) {
+    .work .part {
+        width: 47%;
+    }
+    
+    .work .last {
+        margin-left: 0
+    }
+}
+
+
+
+/*
+    ===============================
+       Profile + Skills Styles
+    ===============================
+*/
+
+.profile_skills {
+    padding: 50px 0;
+    overflow: hidden;
+    background:#000;
+    /* display: inline; */
+    color:#fff
+}
+
+.profile_skills .profile {
+    width: 50%;
+    float: left;
+}
+
+.profile_skills .profile .profile-list {
+    list-style: none
+}
+
+.profile_skills .profile .profile-list .profile-item {
+    margin-bottom: 8px
+}
+
+.profile_skills .profile .profile-list .profile-item span{
+    display: inline-block;
+    width: 100px;   
+    font-weight: bold
+}
+
+.profile_skills .profile .profile-list .profile-item span.web {
+    font-weight: normal;
+
+    color: #d81b60
+}
+
+.profile_skills .skills {
+    width: 50%;
+    float: left;
+}
+
+.profile_skills .skills .skills-desc {
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.5;
+    margin-bottom: 20px
+}
+
+.profile_skills .skills .bar {
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.5;
+    margin-bottom: 20px
+}
+
+.profile_skills .skills .bar .title {
+    float: left;
+font-size:20px;
+/* font-weight: bold; */
+color:#3E90F8
+}
+
+.profile_skills .skills .bar .perc {
+    float: right;
+    margin-right: 100px;
+    color:#3E90F8;
+}
+
+.profile_skills .skills .bar .parent {
+    height: 2px;
+    clear: both;
+    background: #f8f8f8;
+    position: relative;
+    top: 5px
+}
+
+
+.profile_skills .skills .bar .parent span.sp1 {
+    width: 100%;
+    background: #d81b60;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0
+}
+
+.profile_skills .skills .bar .parent span.sp2 {
+    width: 90%;
+    background: #d81b60;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0
+}
+
+.profile_skills .skills .bar .parent span.sp3 {
+    width: 100%;
+    background: #d81b60;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0
+}
+.profile_skills .skills .bar .parent span.sp4 {
+    width: 70%;
+    background: #d81b60;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0
+}
+.profile_skills .skills .bar .parent span.sp5 {
+    width: 60%;
+    background: #d81b60;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0
+}
+
+.profile_skills .profile .profile-title,
+.profile_skills .skills .skills-title{
+    font-size: 40px; 
+    margin-bottom: 20px;
+    font-family: 'Bree Serif', serif;
+    color:#fff;
+    font-family: 'Galada', cursive;
+}
+
+.profile_skills .profile .profile-title span,
+.profile_skills .skills .skills-title span{
+    font-weight: bold;
+    color:#d81b60;
+    font-family: 'Galada', cursive;    
+}
+
+@media (max-width:768px) {
+    .profile_skills .profile , 
+    .profile_skills .skills {
+        width: 100%;
+        float: none
+    }
+    .profile_skills .profile {
+        margin-bottom: 20px
+    }
+}
+/*
+    ===============================
+            about Styles
+    ===============================
+*/
+
+.about {
+    height: 500px;
+    background: url('../img/20.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed
+}
+
+.about .creative-info {
+    padding-top: 20px;
+    width: 50%;
+    float: left;
+}
+
+.about .creative-info .info-title {
+    font-weight: bold;
+    font-size: 60px;
+    font-family: 'Galada', cursive;
+    color: #a00037;
+}
+
+.about .creative-info .info-title span {
+    font-weight: normal;
+    font-family: 'Galada', cursive;
+    color: #000;
+}
+
+.about .creative-info .info-dir {
+    font-size: 40px;
+    color: #a00037;
+    font-family: 'Libre Baskerville', serif;
+    margin-bottom: 20px
+}
+
+.about .creative-info .info-desc {
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Libre Baskerville', serif;
+    margin-bottom: 15px;
+    line-height: 1.8
+}
+
+.about .creative-info .info-desc a {
+    text-decoration: none
+}
+
+@media (max-width:991px) {
+    .about {
+        height: auto
+    }
+    .about .creative-info {
+        width: 100%;
+        padding-top: 10px;
+        float: none
+    }
+    
+    .about .creative-info .info-dir {
+        font-size: 30px
+    }
+}
+
+/*
+    ===============================
+            Socail Styles
+    ===============================
+*/
+
+.social-media {
+    height: auto;
+    overflow: hidden;
+    background-color: black;
+}
+
+.social-media .social {
+    width: 33.33%;
+    float: left;
+    box-sizing: border-box;
+    padding: 100px 0 100px 60px;
+}
+
+
+.social-media .social .icon {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    text-align: center;
+    line-height: 50px;
+    border: 3px solid #d81b60;
+    border-radius:50px;
+    box-shadow:0 0 10px #2196f3,0 0 20px #2196f3, 0 0 80px #2196f3;
+    color: #217ef8;
+    float: left;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top:18px
+}
+
+.social-media .social p {
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    float:left
+}
+
+.social-media .social p span {
+    display: block;
+    margin-bottom: 2px
+}
+
+.social-media .social p span.info2 {
+    font-weight: normal;
+    font-family: 'Libre Baskerville', serif;
+    padding:20px
+}
+
+@media (max-width:991px) {
+    .social-media .social {
+        width: 100%;
+        float: none;
+    }
+}
+
+
+
+/*      ================  my services      ====================                         */
+.services
+{
+    background-image: url(../img/home-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.services .overlay{
+        background-color:rgba(0,0,0,.9);
+        height:100%;
+    width: 100%;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+}
+.services svg{
+    margin-top: 70px;
+    font-size:40px;
+    color:#217ef8;
+    font-weight:normal
+}
+.services h3
+{
+    margin-top:40px;
+    color:#fff;
+    font-size:40px;
+    letter-spacing:2px;
+}
+.services p {
+    font-weight:normal;
+    color:#ccc;
+    padding-top:30px;
+    letter-spacing:2px;
+    padding-bottom:50px;
+}
+@media (max-width:991px){
+    .services p{
+    padding-bottom:10px;    }
+}
+
+
+
+/*       =================              start protofolio        ===============              */
+.protofolio{
+    background-color: #000;
+}
+.protofolio h1{
+    text-align: center;
+    padding-top:50px;
+    color:#fff;
+    letter-spacing: 2px;
+    font-size:60px;
+    font-family: 'Galada', cursive;
+    font-weight:400;
+}
+.protofolio .bottom
+{
+    margin: auto;
+    height:3px;
+    background-color:#443f3f;
+    width:265px;
+    margin-top:20px;
+    margin-bottom:80px;
+}
+.protofolio .bottom .dark{
+    margin: auto;
+    width:80px;
+    background-color: #b4004e;
+    height:100%;
+}
+
+.protofolio .list{
+    margin:50px auto;
+}
+.protofolio .list ul{
+    list-style: none;
+    min-width:350px;
+}
+.protofolio .list li{
+    display: inline-block;
+    margin: 0 10px;
+    border:1px solid #b4004e;
+    transition:all .3s ease-in-out;
+    font-weight:500;
+    font-size:18px;
+    cursor: pointer;
+    color:#fff;
+    padding:5px 15px;
+    /* border-radius:3px; */
+    border:2px solid #fff;
+    border-radius:20px;
+}
+.protofolio .list li:hover{
+    color:#fff;
+    background-color:#b4004e;
+    border:1px solid #b4004e;
+}
+.protofolio .list .active{
+    color:#fff;
+    background-color:#b4004e;
+    border:1px solid #b4004e;
+}
+.protofolio img{
+    max-height:100%;
+    max-width:100%;
+    margin-bottom:30px;
+    cursor:pointer;
+}
+.protofolio .over {
+    position: absolute;
+    width: 100%;
+    height: 86%;
+    top: 0;
+    left: 0;
+    margin:0;
+    padding: 0;
+    background-color: rgba(255, 74, 180, 0.616);
+    color: #fff;
+    display:none;
+    transition: all .5s ease-in-out;
+}
+.protofolio .item:hover .over{
+    display:block;
+}
+.protofolio .item{
+    overflow: hidden;
+    position: relative
+}
+.protofolio .item .over button{
+    background-color: transparent;
+    border:1px solid #ccc;
+    color:#000;
+    transition:all .5s ease-in-out;
+    padding: 5px 20px;
+    border-radius:5px;
+    cursor: pointer;
+    outline:none;
+    margin-top: 68.5px;
+}
+.protofolio .item .over button:hover{
+    background-color:#fff;
+        border:1px solid #ccc;
+    color:#C49B66
+}
+.over i
+{
+    color:#fff;
+    position: absolute;
+    bottom: 12px;
+    right: 11px;
+    font-weight: normal;
+}
+
+
+/*
+    ===============================
+            Drop contact Styles
+    ===============================
+*/
+
+.drop {
+    padding: 50px 0;
+    text-align: center;
+    background:#000
+}
+
+.drop .drop-title {
+    font-size: 60px;
+    margin-bottom: 30px;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Galada', cursive;
+    color:#fff
+}
+
+.drop .drop-title span {
+    font-weight: normal;
+    font-family: 'Galada', cursive;
+    color: #d81b60
+}
+
+.drop form {
+    width: 70%;
+    margin: auto
+}
+
+.drop form input {
+    box-sizing: border-box;
+    outline: 0;
+    padding: 5px;
+    margin-bottom: 10px
+}
+
+.drop form .form-input {
+    overflow: hidden
+}
+
+.drop form .form-input input {
+    width: 49%
+}
+
+.drop form .form-input input[type=text] {
+    float: left;
+    width: 49%;
+    border: 2px solid #d81b60;
+    border-radius:50px;
+    height:40px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    box-sizing: border-box;
+    outline: 0;
+    padding: 5px;
+    margin-bottom: 10px
+}
+
+.drop form .form-input input[type=email] {
+    float: right;
+    width: 49%;
+    height:40px;
+    border: 2px solid #d81b60;
+    border-radius:50px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    box-sizing: border-box;
+    outline: 0;
+    padding: 5px;
+    margin-bottom: 10px
+}
+
+.drop form input.sub {
+    width: 100%;
+    border-radius:50px;
+    box-sizing: border-box;
+    border: 2px solid #d81b60;
+    outline: 0;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    height:40px;
+    padding: 5px;
+    margin-bottom: 10px
+}
+
+.drop form textarea {
+    width: 100%;
+    outline: 0;
+    border-radius:10px;
+    border: 2px solid #d81b60;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+.drop form input[type=submit] {
+    width: 40%;
+    height:60px;
+    margin-top: 15px;
+    background: #a00037;
+    /* border: 1px solid #3E90F8; */
+    border: none;
+    font-family: 'Galada', cursive;
+    border-radius:50px;
+    color: #fff;
+    font-size:20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    outline: 0;
+    padding: 5px;
+    margin-bottom: 10px
+}
+
+@media (max-width:575px) {
+    .drop .drop-title {
+        font-size: 40px
+    }
+    
+    .drop form .form-input input {
+        width: 100%
+    }
+    
+    .drop form {
+        width: 90%
+    }
+}
+
+/*
+    ===============================
+            footer Styles
+    ===============================
+*/
+
+.footer {
+    text-align: center;
+    padding: 7px 0;
+    background:#a00037
+}
+
+.footer p {
+    color: #fff
+}
+                                                                   
+
+/*===================loading==============*/
+
+.loading{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    z-index:9999;
+    top:0;
+    color: #fff;
+    left:0;
+}
+    #preloder {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+        background: #000;
+        }
+    
+    .loader {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -13px;
+	margin-left: -13px;
+	border-radius: 60px;
+	animation: loader 0.8s linear infinite;
+	-webkit-animation: loader 0.8s linear infinite;
+}
+        @keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+		border: 4px solid #673ab7;
+		border-left-color: transparent;
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+}
+
+@-webkit-keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+		border: 4px solid #673ab7;
+		border-left-color: transparent;
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+}
