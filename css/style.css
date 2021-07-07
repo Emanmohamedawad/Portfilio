@@ -408,7 +408,7 @@ color:#3E90F8
 }
 
 .profile_skills .skills .bar .parent span.sp2 {
-    width: 90%;
+    width: 100%;
     background: #d81b60;
     position: absolute;
     display: block;
@@ -418,7 +418,7 @@ color:#3E90F8
 }
 
 .profile_skills .skills .bar .parent span.sp3 {
-    width: 100%;
+    width: 98%;
     background: #d81b60;
     position: absolute;
     display: block;
@@ -436,7 +436,7 @@ color:#3E90F8
     bottom: 0
 }
 .profile_skills .skills .bar .parent span.sp5 {
-    width: 60%;
+    width: 100%;
     background: #d81b60;
     position: absolute;
     display: block;
