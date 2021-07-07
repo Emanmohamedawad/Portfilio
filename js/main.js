@@ -3,7 +3,7 @@ $("document").ready(function () {
 
 //outo write
     var typed = new Typed('.writter', {
-        strings: ["<p>Front End <span>Developer</span> </p>"],
+        strings: ["<p>Front End <span>Developer</span> </p>", "<p>UI/UX <span>Designer</span> </p>"],
         typeSpeed: 100,
         backSpeed: 40,
         backDelay: 1000,
